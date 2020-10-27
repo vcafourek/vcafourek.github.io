@@ -4910,6 +4910,26 @@ input, select, textarea {
 				height: 100%;
 				border-radius: 0;
 			}
+			.clearfix:after {
+			    content: ".";
+			    display: block;
+			    clear: both;
+			    visibility: hidden;
+			    line-height: 0;
+			    height: 0;
+			}
+
+			.clearfix {
+			    display: inline-block;
+			}
+
+			html[xmlns] .clearfix {
+			    display: block;
+			}
+
+			* html .clearfix {
+			    height: 1%;
+			}
 
 		@media screen and (max-width: 1680px) {
 
